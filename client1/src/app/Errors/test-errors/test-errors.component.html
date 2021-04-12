@@ -1,0 +1,15 @@
+
+<div class="text-center mt-4">
+    <button class="btn btn-primary mr-2" type="button" (click)="ServerError()"
+   >Server Error</button>
+    <button class="btn btn-primary mr-2" type="button" (click)="Auth()">Auth</button>
+    <button class="btn btn-primary mr-2" type="button" (click)="BadRequest()">BadRequest</button>
+    <button class="btn btn-primary mr-2" type="button" (click)="NotFound()"
+    >NotFound</button>
+    <button class="btn btn-primary " type="button" (click)="ValidationError()" >ValidationError</button>
+</div>
+<div class=" mt-3 text-danger" *ngIf="Validationerror.length>0" style="" >
+    <ul >
+  <li *ngFor="let err of Validationerror"> {{err}}</li>
+    </ul>
+</div>
