@@ -4,12 +4,13 @@ import { ReplaySubject } from 'rxjs';
 import {user} from '../models/User';
 import {map} from 'rxjs/operators';
 import { stringify } from '@angular/compiler/src/util';
+import { environment } from 'src/environments/environment';
 @Injectable({
   providedIn: 'root'
 })
 export class AccountService {
 
-  baseurl='https://localhost:5001/api/'
+  baseurl=environment.MainUrl;
   constructor(private https : HttpClient) { }
   private userbuffer = new ReplaySubject<user>(1);
   CurrentUser$ = this.userbuffer.asObservable();

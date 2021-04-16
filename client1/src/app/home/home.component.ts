@@ -12,20 +12,20 @@ export class HomeComponent implements OnInit {
   users:any;
   register:boolean;
   ngOnInit(): void {
-    this.getusers()
+    
   }
   registering()
   {
     this.register = true;
   }
 
-  getusers()
-  {
-    this.https.get('https://localhost:5001/api/users').subscribe
-    (
-      users =>{this.users=users}
-    )
-  }
+  //getusers()
+  //{
+   // this.https.get('https://localhost:5001/api/users').subscribe
+    //(
+      //users =>{this.users=users}
+    //)
+ // }
 
   cancel(event:boolean)
   {

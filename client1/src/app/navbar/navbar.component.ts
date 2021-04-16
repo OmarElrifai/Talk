@@ -25,23 +25,23 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
     this.setcurrentuser();
-    this.GetUsers();
+    
   }
 
-  GetUsers()
-  {
-    this.Users.GetUsers().subscribe
-    (
-      response =>
-      {
-         this.users=response
-      },
-      error=>
-      {
-        console.log(error)
-      }
-    )
-  }
+  //GetUsers()
+  //{
+    //this.Users.GetUsers().subscribe
+   // (
+     // response =>
+      //{
+        // this.users=response
+     // },
+      //error=>
+      //{
+       // console.log(error)
+     // }
+    //)
+  //}
 
   login()
   { 

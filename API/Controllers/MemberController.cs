@@ -4,10 +4,12 @@ using API.Data;
 using API.DTOs;
 using API.Interfaces;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
 {
+    [Authorize]
     public class MemberController:APIController
     {
         private readonly userdata _data;

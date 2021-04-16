@@ -109,7 +109,7 @@
         "Country": "Bouvet Island",
         "photos": [
           {
-            "url": "https://randomuser.me/api/portraits/women/9.jpg",
+            "url": "https://randomuser.me/api/portraits/men/9.jpg",
             "isMain": true
           }
         ]
@@ -128,7 +128,7 @@
         "Country": "Sudan",
         "photos": [
           {
-            "url": "https://randomuser.me/api/portraits/women/80.jpg",
+            "url": "https://randomuser.me/api/portraits/men/80.jpg",
             "isMain": true
           }
         ]
@@ -147,7 +147,7 @@
         "Country": "Cape Verde",
         "photos": [
           {
-            "url": "https://randomuser.me/api/portraits/women/33.jpg",
+            "url": "https://randomuser.me/api/portraits/men/33.jpg",
             "isMain": true
           }
         ]
@@ -166,7 +166,7 @@
         "Country": "Yugoslavia",
         "photos": [
           {
-            "url": "https://randomuser.me/api/portraits/women/37.jpg",
+            "url": "https://randomuser.me/api/portraits/men/37.jpg",
             "isMain": true
           }
         ]
@@ -185,7 +185,7 @@
         "Country": "Iceland",
         "photos": [
           {
-            "url": "https://randomuser.me/api/portraits/women/96.jpg",
+            "url": "https://randomuser.me/api/portraits/men/96.jpg",
             "isMain": true
           }
         ]

@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers
 {
-    
+    [Authorize]
     public class userscontroller : APIController
     {
         private readonly IUserRepository _rep;

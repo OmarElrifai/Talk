@@ -1,0 +1,36 @@
+.card-img-top
+{
+    transform:scale(1.0,1.0);
+    transition-duration: 500ms;
+    transition-timing-function: ease-out;
+    
+}
+.card-img-top:hover
+{
+    transform:scale(1.2,1.2);
+    opacity:0.7;
+}
+.card-im
+{
+    overflow: hidden;  
+    position: relative; 
+}
+
+.lis
+{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -10px;
+    opacity:0;
+}
+.card-im:hover .lis
+{
+    opacity:1;
+    bottom:0;
+}
+.animate
+{
+    transition:all 500ms ease-in-out;
+}
+
