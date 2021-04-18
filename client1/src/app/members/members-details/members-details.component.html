@@ -1,1 +1,61 @@
-<p>members-details works!</p>
+<div class="row">
+<div class="card col-4" style="margin-bottom:20px ;" *ngIf="member" >
+    <img src="{{member.photoUrl}}" class="card-img-top img-thumbnail" alt="{{member.knownAs}}">
+    <div class="card-body">
+        
+        <div class="mb-2">
+      <p class="card-text">Location: <br>{{member.country}},{{member.city}}</p>
+        </div>
+      
+        <div class="mb-2">
+       <p class="card-text">Age:<br>{{member.age}}</p>
+        </div>
+
+        <div class="mb-2">
+            <p class="card-text">Last Active:<br>{{member.lastActive}}</p>
+        </div>
+
+        <div class="mb-2">
+            <p class="card-text">Member Since:<br>{{member.created}}</p>
+        </div>
+        
+        <div class="row" style="margin-top: 10px ;">
+        <div class="btn-group col-12" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-primary">Like</button>
+            <button type="button" class="btn btn-success">Middle</button>
+        </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="col-8">
+    <tabset class="member-tabset">
+
+      <tab heading="About" >
+      <h4>Description</h4>
+      <p>{{member.introduction}}</p>
+      <h4>Looking for:</h4>
+      <p>{{member.lookingFor}}</p>
+      </tab>
+
+      <tab heading="Interests">
+        <h4>Interests</h4>
+        <p>{{member.interests}}</p>
+        
+        </tab>
+
+        <tab heading="Photos">
+          <ngx-gallery [options]="galleryOptions" [images]="galleryImages" class="ngx-gallery"></ngx-gallery>
+
+            
+        </tab>
+ 
+        <tab heading="Messages">
+            <h4>Messages will be here</h4>
+            
+        </tab>
+
+    </tabset>
+  </div>
+
+</div>

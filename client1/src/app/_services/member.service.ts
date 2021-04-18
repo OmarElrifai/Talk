@@ -22,7 +22,7 @@ export class MemberService {
   
   GettMembers(username:string)
   {
-    return this.http.get<MemberProfile>(environment.MainUrl+"Member/"+username,httpOptions);
+    return this.http.get<MemberProfile>(this.baseurl+"Member/"+username,httpOptions);
   }
 
 }
