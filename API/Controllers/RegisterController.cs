@@ -30,7 +30,15 @@ namespace API.Controllers
             {
               Username = afreet.username,
               PasswordHash = hash.ComputeHash(Encoding.UTF8.GetBytes(afreet.password)),
-              PasswordSalt = hash.Key
+              PasswordSalt = hash.Key,
+             // DateOfBirth=afreet.DateOfBirth,
+              KnownAs=afreet.KnownAs,
+              Gender=afreet.Gender,
+              Introduction=afreet.Introduction,
+              LookingFor=afreet.LookingFor,
+              Interests=afreet.Interests,
+              City=afreet.City,
+              Country=afreet.Country
             };
 
             data.users.Add(user);

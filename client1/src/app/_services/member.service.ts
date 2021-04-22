@@ -3,11 +3,11 @@ import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { MemberProfile } from '../models/Member';
 
-const httpOptions=
-{
-  headers:new HttpHeaders 
-  ({Authorization:'Bearer '+JSON.parse(localStorage.getItem('user')).token})  
-}
+//const httpOptions=
+//{
+  //headers:new HttpHeaders 
+  //({Authorization:'Bearer '+JSON.parse(localStorage.getItem('user')).token})  
+//}
 @Injectable({
   providedIn: 'root'
 })
@@ -17,12 +17,12 @@ export class MemberService {
 
   GetMembers()
   {
-    return this.http.get<MemberProfile[]>(this.baseurl+"Member",httpOptions);
+    return this.http.get<MemberProfile[]>(this.baseurl+"Member");
   }
   
   GettMembers(username:string)
   {
-    return this.http.get<MemberProfile>(this.baseurl+"Member/"+username,httpOptions);
+    return this.http.get<MemberProfile>(this.baseurl+"Member/"+username);
   }
 
 }
